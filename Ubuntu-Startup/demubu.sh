@@ -21,21 +21,21 @@ if ! -e /mnt/f; then
 	mkdir /mnt/f
 	chmod -R 700 /mnt/f
 fi
->>EOF
+EOF
 
 tee -a /home/roamy/.bashrc 1>/dev/null << EOF
 if ! -e /mnt/f; then
 	mkdir /mnt/f
 	chmod -R 700 /mnt/f
 fi
->> EOF
+EOF
 
 tee -a /home/root/.bashrc 1>/dev/null << EOF
 if ! -e /mnt/f; then
 	mkdir /mnt/f
 	chmod -R 700 /mnt/f
 fi
->> EOF
+EOF
 
 # acces to the an usb key
 mount -t drvfs F: /mnt/f
