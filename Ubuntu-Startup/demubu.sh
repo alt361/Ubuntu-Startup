@@ -21,7 +21,7 @@ if ! -e /mnt/f; then
 	mkdir /mnt/f
 	chmod -R 700 /mnt/f
 fi
->> EOF
+>>EOF
 
 tee -a /home/roamy/.bashrc 1>/dev/null << EOF
 if ! -e /mnt/f; then
