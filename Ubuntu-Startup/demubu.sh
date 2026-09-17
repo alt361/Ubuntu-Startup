@@ -10,7 +10,7 @@ sudo su root
 
 # apt database update
 apt update 1>/dev/null 2>/dev/null && apt upgrade 1>/dev/null 2>/dev/null
-apt install tree plocate smartmontools -y
+apt install tree plocate gitk -y
 
 cd /
 clear
