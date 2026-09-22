@@ -41,7 +41,7 @@ EOF
 mount -t drvfs F: /mnt/f
 
 # edit of files properties
-grep -o linenumbers /etc/nanorc | sed -i -e "s/^#//" /etc/nanorc
+grep -o "linenumbers" /etc/nanorc | sed -i -e "s/^#//" /etc/nanorc
 grep -o "#" /etc/crontab | tail -1 | sed -i -e "s/#/$subs/"  /etc/crontab
 grep -o "#force_color_prompt" /home/roamy/.bashrc | sed -e -i "s/#//" /home/roamy/.bashrc
 grep -o "#force_color_prompt" /root/.bashrc | sed -e -t "s/#//" /root/.bashrc
